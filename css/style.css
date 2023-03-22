@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: pink;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: white;
+  padding: auto;
+  color: black;
+}
+#section-principal {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  background-color: white;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+}
+#menu {
+  color: pink;
+}
+#menu2 {
+  list-style: none;
+  display: inline-block;
+  font-family: Verdana;
+  text-align: center;
+  width: 70%;
+  background-color: pink;
+  height: 80px;
+  margin: 6% 15%;
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#menu2 li {
+  display: inline-block;
+  color: pink;
+  font-size: 1.3rem;
+  margin: 0.1em 1em;
+  padding: 14px;
+}
+#menu2 a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding: 0.1em 0.5em;
+  font-size: 15px;
+}
+#menu2 a:hover {
+  color: blueviolet;
+}
+#menu2 a::before,
+#menu2 a::after {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  content: "";
+  transition: all ease 0.3s;
+  opacity: 0;
+}
+#menu2 a::before {
+  right: 0;
+  top: 0;
+  border-top: 2px solid blueviolet;
+  border-right: 4px solid blueviolet;
+  transform: translate(-100%, 40%);
+}
+#menu2 a::after {
+  left: 0;
+  bottom: 0;
+  border-left: 4px solid blueviolet;
+  border-bottom: 2px solid blueviolet;
+  transform: translate(100%, -40%);
+}
+#menu2 a:hover::before,
+#menu2 a:hover::after {
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+nav {
+  background-color: white;
+  font-size: 1.4rem;
+  font-family: Verdana;
+  color: pink;
+  text-align: center;
+}
+#titulo-principal {
+  background-color: white;
+  font-size: 1.4rem;
+  font-family: Verdana;
+  color: pink;
+}
+.Novedades {
+  padding: 70px;
+  margin-left: 40px;
+  color: white;
+}
+.blockquote {
+  color: white;
+  font-family: Verdana;
+  font-size: 1.4rem;
+}
+
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-rows: auto auto;
+  justify-content: center;
+  gap: 1em;
+  grid-auto-rows: minmax(125px, auto);
+  grid-gap: 0.5rem;
+  background-color: pink;
+}
+.grid1 {
+  background-color: pink;
+  padding: 1em;
+  height: auto;
+  width: auto;
+}
+.grid1 img {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+}
+.grid1 h4 {
+  font-family: Verdana;
+  color: white;
+  font-size: 1.4rem;
+}
+.grid1 h5 {
+  font-family: Verdana;
+  color: white;
+  font-size: 1.4rem;
+}
+.grid1 p {
+  font-family: Verdana;
+  color: white;
+  font-size: 1rem;
+}
+.grid1:hover {
+  border: 1px solid blueviolet;
+}
+.Titulo {
+  font-size: 1.5rem;
+  font-family: Verdana;
+  color: white;
+}
+.footer {
+  font-size: 1.4rem;
+  font-family: Verdana;
+  margin: 5px;
+  display: inline-block;
+}
+.carrusel {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  max-width: 1000px;
+}
+.carrusel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 1000px;
+}
+.carrusel-fotos {
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+.carrusel-fotos img {
+  border: 4px solid white;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+.carrusel-menu {
+  display: none;
+}
+@media screen and (min-width: 500px) {
+  .carrusel-fotos {
+    overflow: hidden;
+  }
+  .carrusel-fotos img {
+    width: 500px;
+    height: 400px;
+  }
+  .carrusel-menu {
+    display: block;
+  }
+  .carrusel-menu img {
+    box-sizing: border-box;
+    width: 50px;
+    height: 40px;
+    border: 5px solid white;
+  }
+  .carrusel-menu img:hover {
+    border: none;
+  }
+}
+.contenedor {
+  background-color: pink;
+  height: 200px;
+  width: 200px;
+  font-size: 0px;
+}
+.productos-descripción {
+  text-align: center;
+  vertical-align: middle;
+}
+.centrado img {
+  display: block;
+  margin: auto;
+}
+.resaltar {
+  font-family: Verdana;
+  font-size: 1.3rem;
+}
+.contenedor {
+  display: inline;
+}
+.footer {
+  background-color: pink;
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+.footer-contacto {
+  background-color: pink;
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 0.8rem;
+  color: black;
+}
+#titulo-contacto {
+  font-family: Verdana;
+  font-size: 0.8rem;
+  color: white;
+}
+.colum img {
+  width: 100%;
+  margin-top: 5px;
+}
+.colum img:hover {
+  filter: grayscale(1);
+}
+.row {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  height: 400px;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.colum {
+  flex: 25%;
+  padding: 5px;
+}
+@media (max-width: 800px) {
+  .colum {
+    flex: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .colum {
+    flex: 100%;
+  }
+}
+.titulodegaleria {
+  font-family: Verdana;
+  font-size: 2rem;
+  color: white;
+}
+.tituloregaleria {
+  font-family: Verdana;
+  font-size: 2rem;
+  color: white;
+  text-decoration: underline;
+}
+.texto-regaleria {
+  font-family: Verdana;
+  font-size: 2rem;
+  color: black;
+}
+.row .colum {
+  padding: 10px;
+  background-color: black;
+}
+.resaltar {
+  font-family: Verdana;
+  font-size: 2rem;
+  color: white;
+  text-decoration: underline;
+}
+.centrado img {
+  border: 5px solid black;
+}
+.centrado {
+  font-family: Verdana;
+  font-size: 1rem;
+  color: black;
+  line-height: 30px;
+}
+#titulo-principal {
+  width: 300px;
+  height: 40px;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo-principal {
+  width: 300px;
+  height: 40px;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana;
+}
+.contenedor1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contenedor1 figure {
+  position: relative;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.contenedor1 figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+.contenedor1 figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(229, 138, 184, 0.5);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  font-family: Verdana;
+}
+.contenedor1 figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+.contenedor1 figure:hover > .capa h5 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.contenedor1 figure:hover > img {
+  transform: scale(1.3);
+}
+.contenedor1 figure .capa h5 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+.contenedor1 figure .capa p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+.Contacto {
+  background-color: pink;
+}
+.home {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-family: Verdana;
+}
+.contenedorderegaleria {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 1rem;
+  max-width: 1000px;
+}
+.contenedorderegaleria img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+.item-a {
+  grid-row: 1 / 3;
+}
+.item-b {
+  grid-column: 3 / 5;
+}
+.item-c {
+  grid-row: 2 / 4;
+}
+.item-d {
+  grid-column: 3 / 5;
+}
+#titulodegaleriadereagaleria {
+  color: #fff;
+  font-family: Verdana;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.container-fluid {
+  position: center;
+  background-color: #fff;
+}
