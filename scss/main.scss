@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import "index";
+@import "catalogo";
+@import "regaleria";
+@import "tutoriales";
+@import "contacto";
+
+/*variables*/
+$rosasiemprebella: #ffc0cb;
+/*Mixin*/
+@mixin color($background) {
+  background: white;
+}
+/*extend*/
+%tituloprincipal-width {
+  width: 300px;
+}
+%tituloprincipal-height {
+  height: 40px;
+}
+/*map-get*/
+$estilosectionprincipal: (
+  colorgeneral: white,
+  display: flex,
+  ubicacion: center,
+);
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: $rosasiemprebella;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  @include color();
+  padding: auto;
+  color: black;
+}
+#section-principal {
+  background-color: map-get($estilosectionprincipal, $colorgeneral);
+  display: map-get($estilosectionprincipal, $display);
+  justify-content: map-get($estilosectionprincipal, $ubicacion);
+}
+
+.logo {
+  background-color: white;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  background-color: white;
+  font-size: 1.4rem;
+  font-family: Verdana;
+  color: pink;
+  text-align: center;
+}
+#titulo-principal {
+  background-color: white;
+  font-size: 1.4rem;
+  font-family: Verdana;
+  color: pink;
+}
+.Novedades {
+  padding: 70px;
+  margin-left: 40px;
+  color: white;
+}
+
+.Titulo {
+  font-size: 1.5rem;
+  font-family: Verdana;
+  color: white;
+}
+.footer {
+  font-size: 1.4rem;
+  font-family: Verdana;
+  margin: 5px;
+  display: inline-block;
+  .footer {
+    background-color: $rosasiemprebella;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+  }
+}
+.contenedor {
+  background-color: $rosasiemprebella;
+  height: 200px;
+  width: 200px;
+  font-size: 0px;
+}
+.productos-descripción {
+  text-align: center;
+  vertical-align: middle;
+}
+.contenedor {
+  display: inline;
+}
+
+.footer-contacto {
+  background-color: $rosasiemprebella;
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 0.8rem;
+  color: black;
+}
+#titulo-contacto {
+  font-family: Verdana;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.titulodegaleria {
+  font-family: Verdana;
+  font-size: 2rem;
+  color: white;
+  text-decoration: underline;
+}
+
+#titulo-principal {
+  @extend %tituloprincipal-width;
+  @extend %tituloprincipal-height;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo-principal {
+  @extend %tituloprincipal-width;
+  @extend %tituloprincipal-height;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana;
+}
+.Contacto {
+  background-color: $rosasiemprebella;
+}
+.home {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-family: Verdana;
+}
+
+#titulodegaleriadereagaleria {
+  color: #fff;
+  font-family: Verdana;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.container-fluid {
+  position: center;
+  background-color: #fff;
+}
