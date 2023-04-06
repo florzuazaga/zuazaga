@@ -41,6 +41,17 @@ header {
   padding: auto;
   color: black;
 }
+.header-logo {
+  animation: ease-in animation 1s;
+}
+@keyframes animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1%);
+  }
+}
 #section-principal {
   background-color: map-get($estilosectionprincipal, $colorgeneral);
   display: map-get($estilosectionprincipal, $display);

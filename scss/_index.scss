@@ -78,67 +78,60 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  figure {
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+  }
+  figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(229, 138, 184, 0.5);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    font-family: Verdana;
+  }
+  figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+  }
+  figure:hover > .capa h5 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+  }
+  figure:hover > img {
+    transform: scale(1.3);
+  }
+  figure .capa h5 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+  }
+  figure .capa p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+  }
 }
 
-.contenedor1 figure {
-  position: relative;
-  height: 250px;
-  width: 350px;
-  overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-}
-
-.contenedor1 figure img {
-  width: 100%;
-  height: 100%;
-  transition: all 500ms ease-out;
-}
-
-.contenedor1 figure .capa {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(229, 138, 184, 0.5);
-  transition: all 500ms ease-out;
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-  font-family: Verdana;
-}
-
-.contenedor1 figure:hover > .capa {
-  opacity: 1;
-  visibility: visible;
-}
-
-.contenedor1 figure:hover > .capa h5 {
-  margin-top: 70px;
-  margin-bottom: 15px;
-}
-
-.contenedor1 figure:hover > img {
-  transform: scale(1.3);
-}
-
-.contenedor1 figure .capa h5 {
-  color: #fff;
-  font-weight: 400;
-  margin-bottom: 120px;
-  transition: all 500ms ease-out;
-  margin-top: 30px;
-}
-
-.contenedor1 figure .capa p {
-  color: white;
-  font-size: 15px;
-  line-height: 1.5;
-  width: 100%;
-  max-width: 220px;
-  margin: auto;
-}
 .blockquote {
   color: white;
   font-family: Verdana;
@@ -160,35 +153,30 @@
   padding: 1em;
   height: auto;
   width: auto;
+  img {
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+  }
+  h4 {
+    font-family: Verdana;
+    color: white;
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-family: Verdana;
+    color: white;
+    font-size: 1.4rem;
+  }
+  p {
+    font-family: Verdana;
+    color: white;
+    font-size: 1rem;
+  }
 }
-
-.grid1 img {
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 70%;
-  margin: 0 auto;
-  height: auto;
-}
-
-.grid1 h4 {
-  font-family: Verdana;
-  color: white;
-  font-size: 1.4rem;
-}
-
-.grid1 h5 {
-  font-family: Verdana;
-  color: white;
-  font-size: 1.4rem;
-}
-
-.grid1 p {
-  font-family: Verdana;
-  color: white;
-  font-size: 1rem;
-}
-
 .grid1:hover {
   border: 1px solid cornflowerblue;
 }
@@ -197,4 +185,30 @@
 }
 .accordion-button {
   background-color: #ffc0cb;
+}
+.conteiner2 {
+  display: flex;
+  margin: 60px;
+}
+.card1 {
+  height: 200px;
+  flex: 1;
+  transition: 0.3s;
+  margin: 0.5px;
+  opacity: 0.5;
+}
+.card1:hover {
+  flex: 5;
+  opacity: 1;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.footer-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
