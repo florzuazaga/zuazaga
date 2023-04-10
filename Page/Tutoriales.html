@@ -9,6 +9,12 @@
       src="https://kit.fontawesome.com/ba99a46787.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../scss/main.css" />
     <title>Tutoriales</title>
   </head>
@@ -20,21 +26,22 @@
       <nav class="titulo-principal">Siempre Bella Make up</nav>
     </header>
     <p class="home"><a href="../index.html">Home</a></p>
-    <div class="row">
-      <div class="colum">
-        <h1 class="tituloregaleria"> PROFESIONALES </h1>
-        <p>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
           <iframe 
-          width="540" 
+          class="d-block w-100"
+          width="560" 
           height="400" 
           src="https://www.youtube.com/embed/Bn58dXimsr4" 
           title="YouTube video player" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           allowfullscreen>Ester Expósito: su look explicado paso a paso por Alex Saint | Looks Icónicos | VOGUE España</iframe>
-        </p>
-        <p>
+        </div>
+        <div class="carousel-item">
           <iframe 
+          class="d-block w-100"
           width="560" 
           height="400" 
           src="https://www.youtube.com/embed/NDk0F1blE20" 
@@ -42,12 +49,22 @@
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           allowfullscreen>Ana Mena: su look icónico, explicado paso a paso por Sergio Antón | Looks Icónicos | VOGUE España</iframe>
-        </p>
-      </div>
-      <div class="colum">
-        <h2 class="tituloregaleria">TINI</h2>
-        <p>
-          <iframe href="<iframe
+        </div>
+        <div class="carousel-item">
+          <iframe 
+          class="d-block w-100"
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/UgI8n3IL6LA" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>Clara Galle: su look icónico explicado paso a paso por Erika Sánchez | Looks Icónicos | VOGUE España</iframe>
+        </div>
+        <div class="carousel-item ">
+            <iframe 
+            class="d-block w-100"
+            href="<iframe
             width="560"
             height="400"
             src="https://www.youtube.com/embed/wJRVMxQbn8o"
@@ -57,9 +74,11 @@
             allowfullscreen
             >TINI- Tutorial Make-Up by Maybelline</iframe
           >"
-        </p>
-        <p>
-          <iframe href="<iframe
+          </div>
+          <div class="carousel-item">
+            <iframe 
+            class="d-block w-100"
+            href="<iframe
             width="560"
             height="400"
             src="https://www.youtube.com/embed/TWphwJ2WBK4"
@@ -69,12 +88,11 @@
             allowfullscreen
             >TINI | Make Up Tutorial By Carola</iframe
           >"
-        </p>
-      </div>
-      <div class="colum">
-        <h3 class="tituloregaleria">VALENTINA ZENERE</h3>
-        <p>
-          <iframe href="<iframe
+          </div>
+          <div class="carousel-item">
+            <iframe 
+            class="d-block w-100"
+            href="<iframe
             width="560"
             height="400"
             src="https://www.youtube.com/embed/mW5iZKOBjmg"
@@ -85,9 +103,11 @@
             >Valentina Zenere: un look bronceado con cejas perfectas | Secretos
             de Belleza | VOGUE España</iframe
           >"
-        </p>
-        <p>
-          <iframe href="<iframe
+          </div>
+          <div class="carousel-item">
+            <iframe 
+            class="d-block w-100"
+            href="<iframe
             width="600"
             height="400"
             src="https://www.youtube.com/embed/CpWI2cvhC7k"
@@ -98,38 +118,82 @@
             >Valentina Zenere explica su rutina de belleza (y productos
             favoritos)</iframe
           >"
-        </p>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
       </div>
-    <footer class="footer">
-      <div class="contenedor3">
-        <button>
-          <a href="https://web.whatsapp.com/" target="_blank"></a>
-          <i class="fa-brands fa-whatsapp fa-3x"></i>
-        </button>
-        <button>
-          <a
-            href="https://www.facebook.com/profile.php?id=100083178594370"
-            target="_blank"
-            ></a
-          >
-          <i class="fa-brands fa-facebook fa-3x"></i>
-        </button>
-        <button>
-          <a
-            href="https://www.instagram.com/siempre_bella_makeup_ok/"
-            target="_blank"
-            ></a
-          >
-          <i class="fa-brands fa-instagram fa-3x"></i>
-        </button>
-        <button>
-          <a
-            href="https://www.google.com/maps/place/9+de+Julio+2017,+S3000FMS+Santa+Fe/@-31.6518742,-60.7130882,17z/data=!3m1!4b1!4m6!3m5!1s0x95b5a9af4c6c0093:0xaa891d764b07ef46!8m2!3d-31.6518788!4d-60.7108995!16s%2Fg%2F11g8g0z02j"
-            target="_blank"
-            ></a
-          >
-          <i class="fa-solid fa-map-location-dot fa-3x"></i>
-        </button>
+      <div class="containertutoriales">
+        <div class="card7">
+          <h5>Tini Stoessel</h5>
+          <img src="../IMG/tini.jpg" alt="tinistoessel">
+          <p>Martina Stoessel​ <br>
+            es una actriz, cantante <br>
+            y compositora argentina.​​</p>
+        </div>
+        <div  class="card7">
+          <h5>Valentina Zenere </h5>
+          <img src="../IMG/valentinazenere.jpg"  alt="valentinazenere ">
+          <p>Valentina Zenere es una actriz, <br>
+            cantante y modelo argentina</p>
+        </div>
+        <div class="card7">
+          <h5>Alex Saint</h5>
+          <img src="../IMG/alexsaint.jpg" alt="alexsaint">
+          <p>Alex Saint es maquilladora, <br>
+            fotografa y actriz transgnero española</p>
+        </div>
+        <div class="card7">
+          <h5>Erika Sanchez</h5>
+          <img src="../IMG/ika sanchez.jpg" alt="erikasanchez">
+          <p>Erika Sanchez es maquilladora <br>
+            y asesora de imagen </p>
+        </div>
+      </div>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <footer class="footer-contacto">
+      <div class="menuredes">
+        <a
+          href="https://www.facebook.com/profile.php?id=100083178594370"
+          style="--color: #3b5998"
+          class="link"
+        >
+          <i class="link-icon fa fa-facebook"></i>
+          <span class="link-title">Facebook</span>
+        </a>
+        <a
+          href="https://web.whatsapp.com/"
+          style="--color: #008000"
+          class="link"
+        >
+          <i class="link-icon fa fa-whatsapp"></i>
+          <span class="link-title">Whatsapp</span>
+        </a>
+        <a
+          href="https://www.instagram.com/siempre_bella_makeup_ok/"
+          style="--color: #dc3545"
+          class="link"
+        >
+          <i class="link-icon fa fa-instagram"></i>
+          <span class="link-title">Instagram</span>
+        </a>
+        <a
+          href="https://www.google.com/maps/place/9+de+Julio+2017,+S3000FMS+Santa+Fe/@-31.6518742,-60.7130882,17z/data=!3m1!4b1!4m6!3m5!1s0x95b5a9af4c6c0093:0xaa891d764b07ef46!8m2!3d-31.6518788!4d-60.7108995!16s%2Fg%2F11g8g0z02j"
+          style="--color: #000000"
+          class="link"
+        >
+          <i class="link-icon fa fa-map"></i>
+          <span class="link-title">Ubicación</span>
+        </a>
       </div>
     </footer>
   </body>

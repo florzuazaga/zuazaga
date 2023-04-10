@@ -90,6 +90,26 @@
   transform: translate(0%, 0%);
   opacity: 1;
 }
+.conteiner6 .card6:hover button {
+  transform: scale(16.5);
+  opacity: 0.5;
+}
+.conteiner6 .card6:hover h2 {
+  bottom: 80px;
+  right: 50px;
+}
+.conteiner6 .card6:hover p {
+  opacity: 1;
+  right: 60px;
+}
+.conteiner6 .card6:hover span {
+  opacity: 0;
+  top: 80px;
+}
+.conteiner6 .card6:hover .pic {
+  filter: grayscale(0);
+  width: 470px;
+}
 
 .Novedades {
   padding: 70px;
@@ -247,6 +267,141 @@
   font-family: Verdana;
   font-size: 1.3rem;
 }
+.card4 {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  background: #0000;
+  display: flex;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.card4:hover {
+  width: 600px;
+}
+.card4 .imgBx {
+  position: relative;
+  max-width: 300px;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.card4 .imgBx img {
+  max-width: 250px;
+  transition: 0.5s ease-in-out;
+}
+.card4:hover .imgBx img {
+  transform: rotate(-35deg) translate(-20px);
+}
+.card4 .details {
+  position: absolute;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #01c2bf;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+.card4:hover .details {
+  left: 300px;
+}
+.card4 .details::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px #fff;
+  z-index: 1;
+}
+.card4 .details h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+.card4 .details h3 span {
+  font-size: 0.65em;
+  font-weight: 300;
+  opacity: 0.85;
+  text-transform: none;
+}
+.card4 .details h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9em;
+  line-height: 1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.card4 p {
+  color: #fff;
+  font-size: 0.8em;
+  opacity: 0.85;
+}
+.tonos {
+  display: flex;
+  gap: 10px;
+}
+.tonos li {
+  list-style: none;
+  color: #fff;
+  font-size: 0.9em;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  cursor: pointer;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.tonos li:hover {
+  background: #fff;
+  color: #01c2bf;
+  opacity: 1;
+}
+.group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.card4 .details h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2em;
+}
+.card4 .details h2 sup {
+  font-weight: 300;
+}
+.card4 .details h2 small {
+  font-size: 0.75em;
+}
+.card4 .details a {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #01c2bf;
+}
 
 .texto-regaleria {
   font-family: Verdana;
@@ -307,6 +462,26 @@
     border: none;
   }
 }
+.containertutoriales {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.containertutoriales img {
+  width: 200px;
+  height: 200px;
+}
+.containertutoriales p {
+  color: #fff;
+}
+.containertutoriales h5{
+  color: #fff;
+}
+
 .contenedorderegaleria {
   background-color: #fff;
   padding: 1rem;
@@ -367,7 +542,7 @@
 
 .row {
   display: flex;
-  padding: 10px;
+  padding: 15px;
   gap: 10px;
   height: 400px;
   flex-wrap: wrap;
@@ -398,6 +573,12 @@
 
 .Contacto {
   background-color: pink;
+}
+.centrado1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .menuredes {
   padding: 2rem;
@@ -478,7 +659,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 header {
   background-color: white;
   padding: auto;
@@ -523,7 +703,31 @@ nav {
   font-family: Verdana;
   color: pink;
 }
-
+.wrapper {
+  height: 30vh;
+  display: grid;
+  place-items: center;
+}
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: Verdana;
+  font-size: 2em;
+  color: #ffc0cb;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 .Novedades {
   padding: 70px;
   margin-left: 40px;
@@ -566,6 +770,42 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btn1 {
+  margin: 2rem;
+  position: relative;
+  width: 70px;
+  height: 30px;
+  font-size: 10px;
+  background-image: linear-gradient(45deg, #141e30 0%, #243b55 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: width 0.5s;
+  border-radius: 0.5s;
+}
+.btn1 * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s;
+}
+.btn1 i {
+  opacity: 0;
+}
+.btn1:focus {
+  width: 30px;
+  background-image: linear-gradient(45deg, #00c9ff 0% #92fe9d 100%);
+  border-radius: 50px;
+}
+.btn1:focus span {
+  opacity: 0;
+}
+.btn1:focus i {
+  opacity: 1;
+  transition-delay: 0.5s;
 }
 
 .productos-descripción {
