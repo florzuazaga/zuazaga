@@ -37,3 +37,22 @@
   padding: 10px;
   background-color: black;
 }
+.containertutoriales {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.containertutoriales img {
+  width: 200px;
+  height: 200px;
+}
+.containertutoriales p {
+  color: #fff;
+}
+.containertutoriales h5 {
+  color: #fff;
+}
