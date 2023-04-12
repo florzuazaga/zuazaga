@@ -267,6 +267,14 @@
   font-family: Verdana;
   font-size: 1.3rem;
 }
+.organizador {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+}
 .card4 {
   position: relative;
   width: 300px;
@@ -478,7 +486,7 @@
 .containertutoriales p {
   color: #fff;
 }
-.containertutoriales h5{
+.containertutoriales h5 {
   color: #fff;
 }
 
@@ -573,6 +581,62 @@
 
 .Contacto {
   background-color: pink;
+}
+.form-contact {
+  background-color: #fff;
+  width: 400px;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  transform: translate(-10%, -10%);
+  box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.8);
+}
+.form-contact header {
+  width: 100%;
+  background-color: #ffc0cb;
+  overflow: hidden;
+  color: white;
+}
+.form-contact header span {
+  font-size: 100px;
+  display: block;
+  text-align: center;
+  padding: 2.5rem;
+}
+.contact {
+  padding: 0.8rem;
+  overflow: hidden;
+  color: gray;
+}
+.form-contact label,
+.form-contact input,
+.form-contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.form-contact label {
+  font-weight: 700;
+}
+.form-contact input:not([type="submit"]),
+.form-contact textarea {
+  border: none;
+  border-bottom: 2px solid #ffc0cb;
+  margin-bottom: 10px;
+  font-size: 20px;
+  outline: none;
+  color: gray;
+}
+.form-contact textarea {
+  min-height: 100px;
+}
+.form-contact input[type="submit"] {
+  padding: 10px;
+  border: none;
+  background-color: #ffc0cb;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
 .centrado1 {
   position: absolute;

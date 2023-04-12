@@ -31,35 +31,37 @@
     <header>
       <nav class="titulo-principal">Siempre Bella Make up</nav>
     </header>
-
     <main class="Contacto">
       <p class="home"><a href="../index.html">Home</a></p>
-      <form>
-        <fieldset>
-          <legend>Contacto</legend>
-          <br />
-          <label for="Name">Nombre y Apellido</label>
-          <input type="text" name="Nombre" />
-          <br />
-          <label for="Mail">Correo electronico</label>
-          <input type="text" name="mail" />
-          <br />
-          <label for="whatsapp">Numero de whatsapp</label>
-          <input type="text" name="whatsapp" />
-          <br />
-          <div>Indique que tipo de presupuesto requiere</div>
-          <br />
-          <select name="Regaleria">
-            <option value="Box">Box</option>
-            <option value="Ramo">Ramo de Maquillaje</option>
-            <option value="Evento">Maquillaje para evento</option>
-          </select>
-          <br />
-          <input type="reset" value="Limpiar formulario" />
-          <br />
-          <input type="submit" value="Enviar info" />
-        </fieldset>
-      </form>
+      <section class="form-contact">
+        <header>
+          <span>
+            <i class="fa fa-paper-plane"></i>
+          </span>
+        </header>
+        <form action="" class="contact"></form>
+         <label for="Name">Nombre y Apellido</label>
+         <input type="text" name="Name" id="Name" />
+
+         <label for="mail">Correo electronico</label>
+         <input type="text" name="mail" id="mail" />
+
+         <label for="whatsapp">Numero de whatsapp</label>
+         <input type="text" name="whatsapp" id="whatsapp" />
+
+         <label class="mensaje">Mensaje</label>
+         <textarea name="mensaje" id="mensaje"></textarea>
+
+         <div>Indique que tipo de presupuesto requiere</div>
+         <select name="Regaleria">
+          <option value="Box">Box</option>
+          <option value="Ramo">Ramo de Maquillaje</option>
+          <option value="Evento">Maquillaje para evento</option>
+         </select>
+
+         <input type="submit" value="Enviar info" />
+        </form>
+      </section>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
